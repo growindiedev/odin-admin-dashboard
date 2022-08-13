@@ -1,14 +1,94 @@
 /* https://lambrous.github.io/odin-admin-dashboard/ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 img {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+  height: 100vh;
+}
+
+.header {
+  grid-column: 2/ -1;
+  grid-row: 1/ 2;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  background-color: #084C61;
+  color: white;
+  /* display: grid;
+  justify-items: center;
+  align-items: center; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center ; */
+}
+
+.side-content {
+  display: flex;
+  margin: 3% 10%;
+  /* display: grid;
+  grid-template-columns: 1fr 6fr; */
+}
+
+.side-content p {
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dashboard {
+  font-weight: bolder;
+  margin-top: 10%;
+  /* transform: scale(110%); */
+  
+}
+
+.home {
+  font-weight: bolder;
+  margin-top: 15%;
+}
+
+.settings {
+  margin-top: 15%;
+  font-weight: bolder;
+}
+
+.side-content span {
+}
+
+.content {
+  overflow-y: scroll;
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
+
+
+
+
 
