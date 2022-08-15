@@ -170,6 +170,24 @@ img {
   padding-bottom: 20px;
 }
 
+.project-cards .card {
+  /* border: 1px solid red; */
+  display: grid;
+  gap: 10px
+}
+
+.card p {
+  text-align: justify;
+}
+
+.rxn-btns {
+  justify-self: end;
+}
+
+/* .project-cards .card * {
+  border: 1px solid red;
+} */
+
 .announcements {
   grid-area: announcements;
 }
@@ -186,8 +204,12 @@ img {
   padding: 2rem;
 }
 
+
+
 .card-btn {
   background-color: white;
+  border: none;
+  padding: 0 1rem;
 }
 
 
